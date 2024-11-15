@@ -1,5 +1,5 @@
 -- db/seeds.sql
-
+use employee_tracker;
 INSERT INTO department (name) VALUES ('Sales'), ('Engineering'), ('Finance');
 
 INSERT INTO role (title, salary, department_id)

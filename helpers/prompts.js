@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 
 async function mainMenu() {
-   inquirer.prompt({
+  return inquirer.prompt([{
     type: 'list',
     name: 'action',
     message: 'What would you like to do?',
@@ -16,8 +16,8 @@ async function mainMenu() {
       'Update Employee Role',
       'Exit'
     ]
-  })
-  .then((answers)=> {
+  }])
+ .then((answers)=> {
     console.log(answers)
     return answers
   })
