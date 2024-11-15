@@ -5,7 +5,7 @@ node_modules/
 .env
 
 # Database credentials
-db/connection.js
+#db/connection.js
 
 # Logs
 *.log

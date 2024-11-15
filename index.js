@@ -7,6 +7,7 @@ async function init() {
   
   while (inProgress) {
     const { action } = await mainMenu();
+    console.log(action)
 
     switch (action) {
       case 'View All Departments':

@@ -1,8 +1,8 @@
 // helpers/prompts.js
 const inquirer = require('inquirer');
 
-function mainMenu() {
-  return inquirer.prompt({
+async function mainMenu() {
+   inquirer.prompt({
     type: 'list',
     name: 'action',
     message: 'What would you like to do?',
@@ -16,7 +16,11 @@ function mainMenu() {
       'Update Employee Role',
       'Exit'
     ]
-  });
+  })
+  .then((answers)=> {
+    console.log(answers)
+    return answers
+  })
 }
 
 function departmentPrompt() {
